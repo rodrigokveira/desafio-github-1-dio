@@ -1,0 +1,40 @@
+Blobs - objeto que contém metadados do Git = tipo do objeto + tamanho do arquivo + \0 + conteúdo
+
+Trees - objetos que armazenam blobs - monta a estrutura de onde estão localizados os arquivos = tipo do objeto + tamanho do arquivo + \0 + blob sha1 nomedoarquivo
+
+Commits - juntam tudo = aponta para uma árvore + parente (último commit realizado) + autor + mensagem + timestamp
+
+======================
+
+git init = cria o repositório
+git add = mover arquivos
+git commit = commit
+git status = status dos arquivos
+
+git commit -m "mensagem"
+git config --list
+git config --global unset user.email / user.name
+git config --global user.email "e-mail" / user.name "usuário"
+git remote add origin "url" (origin é um alias)
+git remote -v = lista repositórios remotos
+git push origin master (origin = alias do remoto / master = branch)
+git pull origin master (origin = alias do remoto / master = branch)
+git clone url
+
+======================
+
+Arquivo Markdown (.md) - "forma mais humana" de se escrever um arquivo HTML
+
+======================
+
+Tipos de arquivos do git (tracked) / (untracked - não conhecido pelo git)
+- Unmodified
+- Modified
+- Staged - quando faz o git add / arquivo pronto para commit
+
+======================
+
+Ambiente de desenvolvimento
+- Working Directory
+- Staging Area
+- Local Repository - composto por commits
